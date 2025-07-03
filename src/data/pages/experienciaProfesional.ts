@@ -18,7 +18,14 @@ export const experienciaProfesional = (): Experiencias => {
   
 
     const experienciaProfesionalData: Experiencia[] = [
-       
+             {
+                    empresa: 'Sistran Consultores',
+                    cargo: 'Analista de Sistemas',
+                    fechaInicio: 'Agosto 2021',
+                    fechaFin: 'Actualidad',
+                    descripcion: 'Análisis y diseño de sistemas, implementación de soluciones tecnológicas.',
+                    tecnologias: ['C#', 'ASP.NET', 'React', 'Javascript', 'TypeScript', 'SQL Server', 'Azure DevOps']
+                },
                 {
                     empresa: 'Sistran Andina',
                     cargo: 'Desarrollador Backend',
@@ -27,15 +34,7 @@ export const experienciaProfesional = (): Experiencias => {
                     descripcion: 'Desarrollo funcionalidades backend de integración.',
                     tecnologias: ['C#', '.Net Framework', 'SQL Server', 'Azure DevOps'],
                     motivoSalida: 'Proyecto finalizado-Promosión a Analista de Sistemas'
-                },
-                {
-                    empresa: 'Sistran Consultores',
-                    cargo: 'Analista de Sistemas',
-                    fechaInicio: 'Agosto 2021',
-                    fechaFin: 'Actualidad',
-                    descripcion: 'Análisis y diseño de sistemas, implementación de soluciones tecnológicas.',
-                    tecnologias: ['C#', 'ASP.NET', 'React', 'Javascript', 'TypeScript', 'SQL Server', 'Azure DevOps']
-                },
+                },               
                 {
                     empresa: 'NetBy Produbanco',
                     cargo: 'Desarrollador Full Stack',
