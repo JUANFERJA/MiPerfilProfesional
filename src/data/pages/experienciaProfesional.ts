@@ -62,15 +62,7 @@ export const experienciaProfesional = (): Experiencias => {
                     tecnologias: ['ConectWise', '.AptraVision', 'NCR', 'SQL Server'],
                     motivoSalida: 'Crecimiento profesional.'
                 },
-                {
-                    empresa: 'Ceiaf',
-                    cargo: 'Coordinador de Servicios',
-                    fechaInicio: 'Abril 2019',
-                    fechaFin: 'Mayo 2020',
-                    descripcion: 'Coordinar servicios de mantenimiento preventivo y correctivo para ATMs de la marca NCR.',
-                    tecnologias: ['ConectWise', '.AptraVision', 'NCR', 'SQL Server'],
-                    motivoSalida: 'Crecimiento profesional.'
-                }
+                
 
             ]
         
