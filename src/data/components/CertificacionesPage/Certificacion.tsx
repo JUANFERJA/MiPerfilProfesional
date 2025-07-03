@@ -83,7 +83,6 @@ export const Certificacion = ({certificaciones, titulo}: {certificaciones: ICert
                 </div>
             )
         }
-
        
     </div>
   )
