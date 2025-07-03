@@ -30,13 +30,14 @@ export const navbar = (): NavbarData => {
             url: "/experiencia"
         },
         {
+            descripcion: "Certificaciones",
+            url: "/certificaciones"
+        },
+        {
             descripcion: "Proyectos",
             url: "/proyectos"
         },
-        {
-            descripcion: "Certificaciones",
-            url: "/certificaciones"
-        }
+       
     ]
 
     let socialLinks: SocialLink[] = [
