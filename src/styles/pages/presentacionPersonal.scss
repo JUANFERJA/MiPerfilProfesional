@@ -1,0 +1,195 @@
+.datos-personales{
+    width: 70%;
+    background: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    .titulo{
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #CFA869;
+        text-align: center;
+       
+        letter-spacing: 1px;
+    }
+
+    .descripcion{
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        color: azure;
+        
+    }
+
+    .card-datos-personales{
+        background: black;
+        box-shadow: #CFA869 0px 0px 10px, #CFA869 0px 0px 20px, #CFA869 0px 0px 30px;
+        color: #FBF9F3;
+        .link{
+            color: #E4F5A9;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            
+            &:hover {
+                color: #A2CC3F;
+                text-decoration: underline;
+            }
+        }
+    }
+
+     .habilidades {
+        margin-left: 20px;
+        
+        .habilidades-container {
+            display: flex;
+            gap: 20px;
+            
+            .columna-habilidades {
+                flex: 1;
+                
+                .lista-habilidades {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        
+        .lista-habilidades {
+            list-style: none;
+            padding: 0;            
+            .habilidad-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                padding: 10px;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                border: 1px solid rgba(228, 245, 169, 0.2);
+                
+                .icono-habilidad {
+                    color: #CFA869;
+                    font-size: 1.2rem;
+                    margin-right: 10px;
+                    width: 20px;
+                    text-align: center;
+                }
+                
+                .nombre-habilidad {
+                    font-weight: 500;
+                    margin-right: 10px;
+                    min-width: 100px;
+                    color: #FBF9F3;
+                }
+                
+                .nivel-habilidad {
+                    font-size: 0.9rem;
+                    color: #E4F5A9;
+                    margin-right: 15px;
+                    min-width: 80px;
+                    text-align: center;
+                    background: rgba(228, 245, 169, 0.1);
+                    padding: 2px 8px;
+                    border-radius: 12px;
+                }
+                
+                .barra-progreso {
+                    flex: 1;
+                    height: 8px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 4px;
+                    overflow: hidden;
+                    margin-left: 10px;
+                    position: relative;
+                    
+                    .progreso {
+                        height: 100%;
+                        background: linear-gradient(90deg, #E4F5A9, #A2CC3F);
+                        border-radius: 4px;
+                        transition: width 0.8s ease-in-out;
+                        box-shadow: 0 0 10px rgba(228, 245, 169, 0.3);
+                        position: relative;
+                        animation: pulse 3s ease-in-out infinite;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+                            animation: shimmer 2.5s infinite;
+                        }
+                        
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(45deg, 
+                                transparent 25%, 
+                                rgba(255, 255, 255, 0.1) 25%, 
+                                rgba(255, 255, 255, 0.1) 50%, 
+                                transparent 50%, 
+                                transparent 75%, 
+                                rgba(255, 255, 255, 0.1) 75%);
+                            background-size: 20px 20px;
+                            animation: move 1s linear infinite;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
+         // Animación de brillo/shimmer para las barras de progreso
+    @keyframes shimmer {
+        0% { 
+            left: -100%; 
+        }
+        100% { 
+            left: 100%; 
+        }
+    }
+
+    // Efecto de fluctuar adicional para las barras
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 0 10px rgba(228, 245, 169, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(228, 245, 169, 0.6);
+        }
+    }
+
+    // Animación de rayas diagonales que se mueven
+    @keyframes move {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 20px 20px;
+        }
+    }  
+    }    
+
+     
+}
+
+.foto-perfil{
+        width: 30%;
+        background: black;
+        .imagen-perfil{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            // Sombra más suave y realista
+            box-shadow: 
+                0 4px 8px #CFA869,          // Sombra principal
+                0 6px 20px #CFA869,        // Sombra difusa
+                0 0 0 3px #CFA869;    // Borde sutil
+        }
+    }
+

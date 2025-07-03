@@ -1,0 +1,16 @@
+.pagina-personal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: black;
+    .navbar{
+        height: 5%;
+        width: 100%;
+        border-bottom: 1px solid #CFA869;
+     }
+    .contenido{
+        height: 90%;
+        margin-top: 30px;
+        background: black;
+    }
+}

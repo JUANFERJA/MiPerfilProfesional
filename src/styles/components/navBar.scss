@@ -1,0 +1,45 @@
+.vinculos {
+    height: 100%;
+  
+    .vinculos-lista {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .vinculo {
+            margin: 0 10px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: rgb(236 254 255 / var(--tw-text-opacity, 1));
+        }
+
+        .vinculo:hover {
+            color: rgb(103 232 249 / var(--tw-text-opacity, 1));
+            font-size: 18px;
+        }
+    }
+}
+
+.redes-sociales {
+    height: 100%; 
+    
+    .redes-sociales-lista {
+        list-style: none;
+        padding: 0;
+        text-align: end;
+        margin-left: auto;
+        .social-vinculo {
+            margin: 0 10px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: rgb(236 254 255 / var(--tw-text-opacity, 1));
+        }
+
+        .social-vinculo:hover {
+            color: rgb(180 180 180);
+            font-size: 18px;
+        }
+    }
+}
