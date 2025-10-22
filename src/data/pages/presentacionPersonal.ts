@@ -86,7 +86,10 @@ export const presentacionPersonal = () => {
         profesion: profesion,
         habilidades: habilidades,
         contacto: contacto,
-        descripcion: 'Soy un apasionado desarrollador de software con más de 8 años de experiencia en el desarrollo de aplicaciones web, móviles, escritorio y backend.',
+        descripcion: `Soy un apasionado desarrollador de software con más de 8 años de experiencia en el desarrollo de aplicaciones web, móviles, escritorio y backend.
+                        Especializado en tecnologías como .NET, JavaScript, React, Angular y bases de datos SQL. Me encanta crear soluciones eficientes y escalables que impulsen el éxito de los proyectos.
+                        Siempre estoy en busca de nuevos desafíos para seguir creciendo profesionalmente y aportar valor a los equipos con los que colaboro.
+                        Esta aplicación está desarrollada con React y TypeScript para mostrar mi perfil profesional de manera interactiva.`,
         foto: perfilImg
     }
 
