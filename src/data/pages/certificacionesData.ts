@@ -22,6 +22,7 @@ import udemyDdd from '../../assets/certificados/IMAGENES/ddd.jpg';
 import udemyMasterNext from '../../assets/certificados/IMAGENES/master en next.jpg';
 import udemySpringSecurity from '../../assets/certificados/IMAGENES/spring security.jpg';
 import udemyReactHooks from '../../assets/certificados/IMAGENES/react hooks de cero a experto.jpg';
+import udemyAplicacionesEmpresariales from '../../assets/certificados/IMAGENES/Aplicaciones empresariales.png';
 
 import itooMasterDiseno from '../../assets/certificados/IMAGENES/ITOO MASTER EN DISEÑO WEB Y EXPERIENCIA DE USUARIO.png';
 import itooMasterFrontend from '../../assets/certificados/IMAGENES/ITOO MASTER EN FRONT END WORDPRESS, PHP, ANGULAR.png';
@@ -369,7 +370,14 @@ export const certificacionesData = (): ICertificaciones => {
             categoria: "Cyber Seguridad",
             fechaObtencion: "2010-07-13"
         },
-
+{
+            id: 40,
+            nombre: "Arquitectura de Aplicaciones Empresariales con .Net 9",
+            institucion: "Udemy Alex Espejo",
+            imagen: udemyAplicacionesEmpresariales,
+            categoria: "Principales",
+            fechaObtencion: "2025-10-30"
+        },
 
 
     ];
