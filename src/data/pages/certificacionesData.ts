@@ -371,7 +371,7 @@ export const certificacionesData = (): ICertificaciones => {
             categoria: "Cyber Seguridad",
             fechaObtencion: "2010-07-13"
         },
-{
+        {
             id: 40,
             nombre: "Arquitectura de Aplicaciones Empresariales con .Net 9",
             institucion: "Udemy Alex Espejo",
@@ -379,9 +379,8 @@ export const certificacionesData = (): ICertificaciones => {
             categoria: "Principales",
             fechaObtencion: "2025-10-30"
         },
-        ,
-{
-            id: 40,
+        {
+            id: 41,
             nombre: "Introduccion a Desarrollo con IA",
             institucion: "Big School Brais Moure",
             imagen: introduccionIA,
