@@ -34,6 +34,7 @@ import telefonicaJavascript from '../../assets/certificados/IMAGENES/MIRIADAX pr
 
 import devTallesReactPro from '../../assets/certificados/IMAGENES/react pro.jpg';
 import ciscoEmprendimiento from '../../assets/certificados/IMAGENES/NETACAD EMPRENDIMIENTO CISCO.png';
+import introduccionIA from '../../assets/certificados/IMAGENES/IntroduccionIA.png';
 
 import fastStartSetup from '../../assets/certificados/IMAGENES/CONECT WISE FAST START SETUP DEGREE.png';
 import dispatcher from '../../assets/certificados/IMAGENES/CONECT WISEDISPATCHER DEGREE.png';
@@ -377,6 +378,15 @@ export const certificacionesData = (): ICertificaciones => {
             imagen: udemyAplicacionesEmpresariales,
             categoria: "Principales",
             fechaObtencion: "2025-10-30"
+        },
+        ,
+{
+            id: 40,
+            nombre: "Introduccion a Desarrollo con IA",
+            institucion: "Big School Brais Moure",
+            imagen: introduccionIA,
+            categoria: "Principales",
+            fechaObtencion: "2026-03-13"
         },
 
 
