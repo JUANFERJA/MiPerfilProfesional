@@ -1,38 +1,44 @@
 
 import perfilImg from '../../assets/perfil.jpg';
+import { faGithub, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { 
-    faReact, 
-    faJs, 
-    faHtml5, 
-    faCss3Alt, 
-    faAngular, 
-    faNodeJs, 
-    faGitAlt 
+import {
+    faReact,
+    faJs,
+    faHtml5,
+    faCss3Alt,
+    faAngular,
+    faNodeJs,
+    faGitAlt
 } from '@fortawesome/free-brands-svg-icons';
-import { 
-    faDatabase, 
-    faCog, 
+import {
+    faDatabase,
+    faCog,
     faLayerGroup,
-    faCode 
+    faCode
 } from '@fortawesome/free-solid-svg-icons';
 
 export const presentacionPersonal = () => {
-  
+
     interface Contacto {
-            telefono: string;
-            email: string;           
-            linkedin: string;
-            github: string;
+        telefono: string;
+        email: string;
+        socialLinks: SocialLink[]
+    }
+    interface SocialLink {
+        descripcion: string;
+        url: string;
+        icon: IconDefinition;
     }
 
     interface Habilidades {
         nombre: string;
-        nivel: string; 
+        nivel: string;
         porcentaje: number;
         icon: IconDefinition;
     }
-    
+
     interface Profesion {
         titulo: string;
         posicion: string;
@@ -51,17 +57,37 @@ export const presentacionPersonal = () => {
     }
 
     const profesion: Profesion = {
-            titulo: 'Analista de Sistemas',
-            posicion: 'Senior Developer Full Stack',
-            registro: '2250-2021-2283382'
+        titulo: 'Analista de Sistemas',
+        posicion: 'Senior Developer Full Stack',
+        registro: '2250-2021-2283382'
     }
 
 
-    const contacto: Contacto ={
+    const contacto: Contacto = {
         telefono: '+593 991323946',
-        email: 'jufer_tar_lch@hotmail.com',
-        linkedin: 'https://www.linkedin.com/in/jufer-tar-lch/',
-        github: 'https://github.com/jufer-tar-lch'
+        email: 'jufer@hotmail.com',
+        socialLinks: [
+            {
+                descripcion: "Youtube",
+                url: "https://www.youtube.com/@TARYACOJ",
+                icon: faYoutube
+            },
+            {
+                descripcion: "Github",
+                url: "https://github.com/JUANFERJA",
+                icon: faGithub
+            },
+            {
+                descripcion: "Linkedin",
+                url: "https://www.linkedin.com/in/juan-fernando-jacome-castro-b39842112/",
+                icon: faLinkedin
+            },
+            {
+                descripcion: 'TikTok',
+                url: "https://www.tiktok.com/@juanfernandojaca?lang=es-419",
+                icon: faTiktok
+            }
+        ]
     }
 
     const habilidades: Habilidades[] = [
@@ -74,10 +100,10 @@ export const presentacionPersonal = () => {
         { nombre: 'React', nivel: 'Avanzado', porcentaje: 75, icon: faReact },
         { nombre: 'SqlServer', nivel: 'Intermedio', porcentaje: 70, icon: faDatabase },
         { nombre: 'Git', nivel: 'Avanzado', porcentaje: 80, icon: faGitAlt },
-        { nombre: 'Angular', nivel: 'Intermedio', porcentaje: 60, icon: faAngular },     
+        { nombre: 'Angular', nivel: 'Intermedio', porcentaje: 60, icon: faAngular },
         { nombre: 'Node.js', nivel: 'Intermedio', porcentaje: 70, icon: faNodeJs },
         { nombre: 'Arquitectura de Software', nivel: 'Avanzado', porcentaje: 85, icon: faLayerGroup },
-      ];
+    ];
 
     const dataPersonal: PresentacionPersonalData = {
         nombre: 'Juan Fernando',
@@ -95,5 +121,5 @@ export const presentacionPersonal = () => {
 
     return {
         dataPersonal: dataPersonal
-  }
+    }
 }

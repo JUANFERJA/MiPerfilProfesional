@@ -7,7 +7,8 @@ export const PresentacionPersonalPage = () => {
   const { dataPersonal } = presentacionPersonal();
   const { nombre, apellido, edad, profesion, descripcion, contacto, habilidades } = dataPersonal;
   const { titulo, posicion, registro } = profesion ;
-  const { email, telefono, linkedin, github } = contacto ;
+  const { email, telefono, socialLinks } = contacto ;
+
   console.log(dataPersonal);
   return (
     <div className='d-flex flex-row'>
@@ -31,8 +32,9 @@ export const PresentacionPersonalPage = () => {
                   <div className="m-5 mt-0">
                       <p><strong>Teléfono:</strong> {telefono}</p>
                       <p><strong>Email:</strong> <Link to={`mailto:${email}`} className="link">{email}</Link></p>
-                      <p><strong>LinkedIn:</strong> <Link to={linkedin} className="link">{linkedin}</Link></p>
-                      <p><strong>GitHub:</strong> <Link to={github} className="link">{github}</Link></p>
+                      {socialLinks.map((link, index) => (
+                        <p key={index}><strong>{link.descripcion}:</strong> <Link to={link.url} className="link">{link.url}</Link></p>
+                      ))}
                   </div>
               </div>  
            </div>
